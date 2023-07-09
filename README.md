@@ -34,14 +34,10 @@
 
  - And Before running the code do the necessary setting
 1. In configuration --> change Timeout to 1 min as by default it is 3 sec.
-2. Create Environment variables for 'client_id' & 'client_secret'
-      (As to use this sensitive info directly into code is advisable).
-
+2. Create Environment variables for 'client_id' & 'client_secret'(As to use this sensitive info directly into code is advisable).
 3. Add IAM Role which allows lambda to write data to the s3 bucket by going to permission.
 
     
-   
-
  **Deploying Transformation Code in AWS Lambda for extracted data**
 
  - From extracted data of the playlist, information about the song, album & artist needs to be extracted.
