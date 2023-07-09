@@ -46,14 +46,13 @@
 
  - From extracted data of the playlist, information about the song, album & artist needs to be extracted.
 
- - In this code, data is converted from JSON format to CSV & it is stored in an S3 bucket. Refer Spotify-Data-Pipeline-Project.ipynb
+ - In this code, data is converted from JSON format to CSV & it is stored in an S3 bucket. Refer Data_Transformation_Code.py
 
  - Here trigger is added as soon as data gets into the target folder in the S3 transformation code will run as a result data Extraction & Transformation process is fully automated. 
 
  - Note:
   1. In configuration --> change Timeout to 1 min as by default it is 3 sec.
   2. In Permission --> Add IAM Role to allow lambda to access S3 Bucket
-
   3. In layers add  'AWSSDKPandas-Python38'
  
 
