@@ -54,8 +54,15 @@
   1. In configuration --> change Timeout to 1 min as by default it is 3 sec.
   2. In Permission --> Add IAM Role to allow lambda to access S3 Bucket
   3. In layers add  'AWSSDKPandas-Python38'
- 
 
+ **Creating tables from files stored in s3 using AWS Glue & AWS Athena**
+
+- Using Glue Crawler, it will infer the schema of the data in this case three crawlers are created for the song_data, album_dta & artist_data folder but the database will the same.
+
+- Using Glue Data Catalog which stores the metadata will help AWS Athena to create a table.
+
+- In Athena, in the respective database we can see the tables created, now to avoid errors while running queries in Athena create a new S3 bucket & add it's path in Athena-->setting-->manage-->Give Newly created S3 Bucket Path. In this bucket Athena will store query results.
+ 
  
 
  
