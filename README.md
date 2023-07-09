@@ -46,7 +46,7 @@
 
  - From extracted data of the playlist, information about the song, album & artist needs to be extracted.
 
- - In this code, data is converted from JSON format to csv & it is stored in an S3 bucket. Refer Spotify-Data-Pipeline-Project.ipynb
+ - In this code, data is converted from JSON format to CSV & it is stored in an S3 bucket. Refer Spotify-Data-Pipeline-Project.ipynb
 
  - Note:
   1. In configuration --> change Timeout to 1 min as by default it is 3 sec.
